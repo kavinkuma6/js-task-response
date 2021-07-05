@@ -1,0 +1,162 @@
+/* ------------------- */
+/*   DEFAULT STYLING   */
+/* you can't change it */
+/* ------------------- */
+body {
+  font-family: centrale_sans, tahoma, arial, helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  background-color: #1474a4;
+}
+main,
+header {
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 400px;
+}
+#logo-wrapper {
+  margin-top: 40px;
+  text-align: center;
+}
+#logo {
+  width: 100px;
+}
+h1 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+a {
+  color: #daf1f7;
+  text-decoration: underline;
+}
+#capture_signInEmailAddress,
+#capture_signInPassword {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+input {
+  appearance: none;
+  font-size: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0);
+  padding: 8px 12px;
+  border-radius: 2px;
+  background: #f0f8fa;
+  margin-bottom: 0;
+}
+input:focus {
+  outline: none !important;
+  border: 1px solid #0066a1;
+  box-shadow: 0 0 0 0 #fff;
+}
+label {
+  order: -1;
+  margin-bottom: 4px;
+}
+.forgot-password {
+  float: right;
+  margin-bottom: 20px;
+}
+.form-action-buttons {
+  clear: both;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+button {
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 8px 24px;
+  border-radius: 2px;
+  background-color: #1c2d66;
+  border-color: #1c2d66;
+  display: inline-block;
+  font-weight: 400;
+  vertical-align: middle;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* --------------------- */
+/*   NEW THEME STYLING   */
+/* --------------------- */
+
+.light-theme {
+  background: white;
+  height: 100vh;
+}
+.light-theme #header-container {
+  height: 50px;
+  background: #1674a4;
+  max-width: 100%;
+}
+.light-theme #logo-wrapper {
+  position: absolute;
+  top: 3px;
+  margin: 0;
+  left: 16px;
+  background: white;
+  padding: 8px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  height: 50px;
+}
+.light-theme #logo {
+  width: 50px;
+}
+.light-theme h1,
+h2,
+p {
+  color: black;
+  text-align: center;
+}
+.light-theme label {
+  color: #0066a1;
+  visibility: hidden;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.light-theme h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.light-theme input {
+  background: white;
+  border: 0;
+  border-bottom: 2px solid #a7a7a7;
+}
+.light-theme input::placeholder {
+  font-size: 0.9rem;
+}
+.light-theme input:focus {
+  border: 0;
+  border-bottom: 2px solid #0066a1;
+  border-radius: 0;
+}
+.light-theme input:focus + label {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+.light-theme .forgot-password {
+  color: #0066a1;
+}
+.light-theme button {
+  width: 100%;
+  border-radius: 20px;
+  color: white;
+  background-color: #0066a1;
+  text-align: center;
+  border: 0;
+}

@@ -1,0 +1,23 @@
+Task - 1:
+    We need to add this domain https://www.googletagmanager.com to the Content Security Policy to load the js file from this domain.
+    Because, the js file is loaded from a differnt domain and it was not added to the CSP earlier.
+    For Example: 
+            <meta
+            http-equiv="Content-Security-Policy"
+            content="script-src 'self' https://www.googletagmanager.com 'unsafe-inline'"
+            />
+
+Task - 2:
+    Safari browsers does not support 'strict-dynamic'.
+    So, we need to use nonce as fallbacks like this: 
+        <meta
+        http-equiv="Content-Security-Policy"
+        content="script-src 'unsafe-inline' 'self' 'nonce-abcdef' 'strict-dynamic'"
+        />
+    And, we have to add this nonce id(abcdef) to the script.
+
+
+Task - 3:
+    Yes, we could get errors on CSP for a font file. 
+    Because font file can also be loaded from differnt sources. 
+    If we didn't mention the sources in the CSP, it will result in error.

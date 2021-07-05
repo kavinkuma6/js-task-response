@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Task 2</title>
+  </head>
+  <body>
+    <script>
+      myanalytics = [];
+      window.onerror = function (msg, url, lineno, colno, error) {
+        window.myanalytics.push({
+          message: msg,
+          detail: {
+            lineno,
+            colno
+          },
+          file: url,
+          status: error
+        });
+        console.log(myanalytics);
+        return true;
+      };
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
